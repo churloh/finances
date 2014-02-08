@@ -1,4 +1,4 @@
-var AutoCompleteComponent = Ember.TextField.extend({
+export default Ember.TextField.extend({
     required: false,
     attributeBindings: ['required'],
     didInsertElement: function() {
@@ -20,5 +20,3 @@ var AutoCompleteComponent = Ember.TextField.extend({
         this.initializeAutoComplete();
     }.observes('source')
 });
-
-export default AutoCompleteComponent;

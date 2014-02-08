@@ -1,7 +1,5 @@
-var ApplicationController = Ember.ObjectController.extend({
+export default Ember.Controller.extend({
 	account: null,
 	isPageLoading: false,
 	currentYear: new Date().getFullYear()
 });
-
-export default ApplicationController;

@@ -1,4 +1,4 @@
-var Transaction = DS.Model.extend({
+export default DS.Model.extend({
 	date: DS.attr('date'),
 	payee: DS.attr('string'),
 	category: DS.attr('string'),
@@ -7,5 +7,3 @@ var Transaction = DS.Model.extend({
 	outflow: DS.attr('number'),
 	account: DS.belongsTo('account')
 });
-
-export default Transaction;

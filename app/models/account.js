@@ -1,4 +1,4 @@
-var Account = DS.Model.extend({
+export default DS.Model.extend({
     firstName: DS.attr('string'),
     lastName: DS.attr('string'),
     transactions: DS.hasMany('transaction', {
@@ -24,5 +24,3 @@ var Account = DS.Model.extend({
         return transactions.mapBy('payee').uniq();
     }.property('transactions.@each.payee')
 });
-
-export default Account;

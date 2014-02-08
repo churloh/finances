@@ -3,14 +3,17 @@
     "document": true,
     "window": true,
     "location": true,
+    "clearTimeout": true,
     "setTimeout": true,
+    "module": true,
     "Ember": true,
     "Em": true,
     "DS": true,
     "$": true,
     "_": true,
     "google": true,
-    "Pikaday": true
+    "Pikaday": true,
+    "moment": true
   },
   "node" : false,
   "browser" : false,

@@ -1,4 +1,4 @@
-var BalanceIndicatorComponent = Ember.Component.extend({
+export default Ember.Component.extend({
 	tagName: 'span',
 	classNames: ['label'],
 	classNameBindings: ['isNegative:label-danger:label-success'],
@@ -6,5 +6,3 @@ var BalanceIndicatorComponent = Ember.Component.extend({
 		return this.get('balance') < 0;
 	}.property('balance')
 });
-
-export default BalanceIndicatorComponent;

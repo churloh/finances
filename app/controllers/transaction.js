@@ -1,4 +1,4 @@
-var TransactionController = Ember.ObjectController.extend({
+export default Ember.ObjectController.extend({
     needs: 'application',
     removeTimer: null,
     isPendingRemoval: function() {
@@ -21,5 +21,3 @@ var TransactionController = Ember.ObjectController.extend({
         }
     }
 });
-
-export default TransactionController;

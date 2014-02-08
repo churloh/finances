@@ -1,4 +1,4 @@
-var TransactionsController = Ember.ArrayController.extend({
+export default Ember.ArrayController.extend({
     needs: 'application',
     itemController: 'transaction',
     saveSuccessful: false,
@@ -22,10 +22,10 @@ var TransactionsController = Ember.ArrayController.extend({
         });
         this.set('transaction', transaction);
     },
-    toggleSaveSuccessful: function () {
-        this.toggleProperty('saveSuccessful');  
-        setTimeout(function () {
-            this.toggleProperty('saveSuccessful'); 
+    toggleSaveSuccessful: function() {
+        this.toggleProperty('saveSuccessful');
+        setTimeout(function() {
+            this.toggleProperty('saveSuccessful');
         }.bind(this), 7500);
     },
     actions: {
@@ -40,5 +40,3 @@ var TransactionsController = Ember.ArrayController.extend({
         }
     }
 });
-
-export default TransactionsController;

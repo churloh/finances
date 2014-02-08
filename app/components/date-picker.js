@@ -1,4 +1,4 @@
-var DatePickerComponent = Ember.Component.extend({
+export default Ember.Component.extend({
     didInsertElement: function() {
         this.picker = new Pikaday({
             field: this.$('input[type="text"]').get(0),
@@ -19,5 +19,3 @@ var DatePickerComponent = Ember.Component.extend({
         this.picker.destroy();
     }
 });
-
-export default DatePickerComponent;

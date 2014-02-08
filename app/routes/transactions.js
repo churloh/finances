@@ -1,4 +1,4 @@
-var TransactionsRoute = Ember.Route.extend({
+export default Ember.Route.extend({
     model: function() {
         var account = this.controllerFor('application').get('account');
         return account.get('transactions');
@@ -8,5 +8,3 @@ var TransactionsRoute = Ember.Route.extend({
         controller.seedTransaction();
     }
 });
-
-export default TransactionsRoute;

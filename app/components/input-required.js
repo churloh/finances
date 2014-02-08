@@ -1,6 +1,4 @@
-var InputRequiredComponent = Ember.TextField.extend({
+export default Ember.TextField.extend({
 	required: '',
 	attributeBindings: ['required']
 });
-
-export default InputRequiredComponent;
