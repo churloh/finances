@@ -10,4 +10,18 @@ var App = Ember.Application.extend({
   Resolver: Resolver['default']
 });
 
+
+Ember.Application.initializer({
+    name: 'currentAccount',
+    initialize: function(container) {
+        var store = container.lookup('store:main');
+        var account = store.push('account', {
+        	id: 1,
+        	firstName: 'Adam',
+        	lastName: 'Smith'
+        });
+        container.lookup('controller:application').set('account', account);
+    }
+});
+
 export default App;

@@ -12,5 +12,8 @@
   },
   "resolutions": {
     "ember": "~1.4.0-beta.2"
+  },
+  "devDependencies": {
+    "bootstrap": "~3.1.0"
   }
 }
