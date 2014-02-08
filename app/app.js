@@ -19,7 +19,9 @@ Ember.Application.initializer({
             id: 1,
             firstName: 'Adam',
             lastName: 'Smith',
-            links: 'transactions'
+            links: {
+                transactions: 'transactions'
+            }
         });
         container.lookup('controller:application').set('account', account);
     }
